@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Booking | Sumanth Travels & Tours</title>
+<meta name="description" content="Book your next trip with Sumanth Travels & Tours. Fill in your details and our team will confirm your itinerary.">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ================= HEADER ================= -->
+<header class="site-header">
+  <div class="nav-wrap">
+    <a href="index.html" class="brand">
+      <span class="brand-name">Sumanth Travels & Tours</span>
+      <span class="brand-tag">Your Journey, Our Responsibility</span>
+    </a>
+
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav class="main-nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="packages.html">Packages</a></li>
+        <li><a href="booking.html" class="active">Booking</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<!-- ================= PAGE BANNER ================= -->
+<section class="page-banner">
+  <span class="eyebrow">Booking</span>
+  <h1>Book Your Trip</h1>
+  <p>Fill in the details below and start your memorable journey with us.</p>
+</section>
+
+<!-- ================= BOOKING FORM ================= -->
+<section class="bg-sand">
+  <div class="container">
+    <div class="form-card">
+
+      <div class="form-success" id="bookingSuccess">
+        <span>✅</span>
+        <span class="msg-text">Thank you! Your booking request has been received.</span>
+      </div>
+
+      <form id="bookingForm" novalidate>
+        <div class="form-grid">
+
+          <div class="form-field">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+          </div>
+
+          <div class="form-field">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+          </div>
+
+          <div class="form-field">
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" placeholder="10-digit mobile number" pattern="[0-9]{10}" maxlength="10" required>
+          </div>
+
+          <div class="form-field">
+            <label for="destination">Destination</label>
+            <select id="destination" name="destination" required>
+              <option value="">Select Destination</option>
+              <option value="Ooty">Ooty</option>
+              <option value="Manali">Manali</option>
+              <option value="Goa">Goa</option>
+              <option value="Kerala">Kerala</option>
+              <option value="Tirupati">Tirupati</option>
+              <option value="Hyderabad">Hyderabad</option>
+            </select>
+          </div>
+
+          <div class="form-field">
+            <label for="travelDate">Travel Date</label>
+            <input type="date" id="travelDate" name="travelDate" required>
+          </div>
+
+          <div class="form-field">
+            <label for="persons">Number of Persons</label>
+            <input type="number" id="persons" name="persons" placeholder="Number of travellers" min="1" max="50" required>
+          </div>
+
+          <div class="form-field full">
+            <label for="package">Select Tour Package</label>
+            <select id="package" name="package" required>
+              <option value="">Select Package</option>
+              <option value="Ooty Package">Ooty — 3 Days / 2 Nights</option>
+              <option value="Manali Package">Manali — 4 Days / 3 Nights</option>
+              <option value="Goa Package">Goa — 3 Days / 2 Nights</option>
+              <option value="Kerala Package">Kerala — 5 Days / 4 Nights</option>
+              <option value="Tirupati Package">Tirupati — 2 Days / 1 Night</option>
+              <option value="Hyderabad Package">Hyderabad — 2 Days / 1 Night</option>
+            </select>
+          </div>
+
+          <div class="form-field full">
+            <label for="message">Special Requirements</label>
+            <textarea id="message" name="message" placeholder="Enter any special requirements..."></textarea>
+          </div>
+
+          <div class="form-field full">
+            <button type="submit" class="btn btn-primary btn-block">Confirm Booking</button>
+          </div>
+
+        </div>
+      </form>
+
+      <div class="form-note">
+        <h3>Booking Information</h3>
+        <ul>
+          <li>Please provide correct contact details.</li>
+          <li>Our team will call you to confirm your booking.</li>
+          <li>Package prices may vary depending on travel dates.</li>
+          <li>Thank you for choosing Sumanth Travels & Tours!</li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer class="site-footer">
+  <div class="footer-top">
+    <div class="footer-col">
+      <p class="brand-name">Sumanth Travels & Tours</p>
+      <p>Comfortable, affordable and memorable travel experiences across India for individuals, families and groups.</p>
+    </div>
+
+    <div class="footer-col">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="packages.html">Tour Packages</a></li>
+        <li><a href="booking.html">Booking</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>Get In Touch</h4>
+      <p class="contact-line">📞 +91 XXXXX XXXXX</p>
+      <p class="contact-line">📧 sumanthtravels@example.com</p>
+      <p class="contact-line">📍 Andhra Pradesh, India</p>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; <span id="year"></span> Sumanth Travels & Tours. All Rights Reserved.</p>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
